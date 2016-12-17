@@ -1,7 +1,7 @@
 /**
  * @author Troy Nguyen
  * 12/16/16
- * reddit.com/r/dailyprogrammer easy challenge #277: Simplifying Fractions
+ * reddit.com/r/dailyprogrammer easy challenge #277: Simplifying Fractions normal
  */
  
 var input = [

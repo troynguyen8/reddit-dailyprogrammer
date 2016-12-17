@@ -10,10 +10,7 @@ String.prototype.replaceAt = function(index, newChar) {
  
 var input = [['floor', 'brake'], ['wood', 'book'], ['a fall to the floor', 'braking the door in']];
 
-for(var i = 0; i < input.length; i++) {
-	var startWord = input[i][0];
-	var endWord = input[i][1];
-	
+function changeWordByLetter(startWord, endWord) {
 	console.log(startWord);
 	
 	for(var j = 0; j < startWord.length; j++) {
@@ -27,4 +24,8 @@ for(var i = 0; i < input.length; i++) {
 	}
 	
 	console.log('\n');
+}
+
+for(var i = 0; i < input.length; i++) {
+	changeWordByLetter(input[i][0], input[i][1]);
 }
