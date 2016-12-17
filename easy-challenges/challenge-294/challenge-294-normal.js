@@ -15,7 +15,6 @@ function scrabble(letterTiles, desiredWord) {
 		letterTiles = letterTiles.replace(desiredWord.charAt(j), '');
 	}
 	
-	console.log(letterTiles);
 	return true;
 }
 
