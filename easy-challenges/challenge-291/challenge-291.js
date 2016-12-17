@@ -61,7 +61,7 @@ function isValidSeat(chairWeightTol, porridgeTemp) {
 
 var chairString = '';
 for(let i = 1; i < input.length; i++) {
-	var currentSeat = input[i].match(regex);
+	let currentSeat = input[i].match(regex);
 	let chairWeightTol = parseInt(currentSeat[0]);
 	let porridgeTemp = parseInt(currentSeat[1]);
 	
