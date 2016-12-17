@@ -6,7 +6,7 @@
  
 String.prototype.replaceAt = function(index, newChar) {
 	return this.substring(0, index) + newChar + this.substring(index + 1, this.length + 1);
-}
+};
  
 var input = [['floor', 'brake'], ['wood', 'book'], ['a fall to the floor', 'braking the door in']];
 
