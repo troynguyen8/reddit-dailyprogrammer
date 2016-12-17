@@ -55,17 +55,13 @@ var goldiSpecs = input[0].match(regex);
 var goldiWeight = parseInt(goldiSpecs[0]);
 var goldiTempTol = parseInt(goldiSpecs[1]);
 
-function isValidSeat(chairWeightTol, porridgeTemp) {
-	return (chairWeightTol >= goldiWeight && porridgeTemp <= goldiTempTol);
-}
-
 var chairString = '';
 for(let i = 1; i < input.length; i++) {
 	let currentSeat = input[i].match(regex);
 	let chairWeightTol = parseInt(currentSeat[0]);
 	let porridgeTemp = parseInt(currentSeat[1]);
 	
-	if(isValidSeat(chairWeightTol, porridgeTemp)) {
+	if(chairWeightTol >= goldiWeight && porridgeTemp <= goldiTempTol) {
 		chairString = chairString + i + ' ';
 	}
 }
